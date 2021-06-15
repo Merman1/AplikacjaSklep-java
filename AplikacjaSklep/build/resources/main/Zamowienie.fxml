@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="857.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.KontrolerZamowienia">
+    <AnchorPane prefHeight="494.0" prefWidth="212.0" style="-fx-background-color: #730029;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <TextField fx:id="Text1" layoutX="17.0" layoutY="114.0" prefHeight="26.0" prefWidth="173.0" promptText="ID" />
+        <TextField fx:id="Text2" layoutX="17.0" layoutY="148.0" prefHeight="26.0" prefWidth="174.0" promptText="IMIE" />
+        <TextField fx:id="Text3" layoutX="17.0" layoutY="181.0" prefHeight="26.0" prefWidth="174.0" promptText="NAZWISKO" />
+        <TextField fx:id="Text4" layoutX="17.0" layoutY="213.0" prefHeight="26.0" prefWidth="174.0" promptText="NUMER TELEFONU" />
+        <TextField fx:id="Text5" layoutX="17.0" layoutY="246.0" prefHeight="26.0" prefWidth="174.0" promptText="EMAIL" />
+        <TextField fx:id="Text6" layoutX="17.0" layoutY="278.0" prefHeight="26.0" prefWidth="174.0" promptText="ADRES" />
+        <TextField fx:id="Text7" layoutX="17.0" layoutY="312.0" prefHeight="26.0" prefWidth="174.0" promptText="KOD POCZTOWY" />
+        <TextField fx:id="Text8" layoutX="16.0" layoutY="347.0" prefHeight="26.0" prefWidth="174.0" promptText="PLATNOSC" />
+        <TextField fx:id="Text9" layoutX="17.0" layoutY="382.0" prefHeight="26.0" prefWidth="174.0" promptText="DATA" />
+        <Button fx:id="DodajButton" layoutX="26.0" layoutY="454.0" mnemonicParsing="false" onAction="#DodajButtonOnActionEvent" prefHeight="25.0" prefWidth="155.0" text="DODAJ">
+            <font>
+                <Font name="Times New Roman Bold" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <Button fx:id="UsunButton" layoutX="26.0" layoutY="486.0" mnemonicParsing="false" onAction="#UsunButtonOnActionEvent" prefHeight="25.0" prefWidth="155.0" text="USUŃ">
+            <font>
+                <Font name="Times New Roman Bold" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <Button fx:id="EdytujButton" layoutX="26.0" layoutY="522.0" mnemonicParsing="false" onAction="#EdytujButtonOnActionEvent" prefHeight="25.0" prefWidth="155.0" text="AKTUALIZUJ">
+            <font>
+                <Font name="Times New Roman Bold" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <Button fx:id="ZamknijButton" layoutX="26.0" layoutY="557.0" mnemonicParsing="false" onAction="#zamknijButtonOnAction" prefHeight="25.0" prefWidth="155.0" text="ZAMKNIJ">
+            <font>
+                <Font name="Times New Roman Bold" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+      <TextField fx:id="Text10" layoutX="16.0" layoutY="414.0" prefHeight="26.0" prefWidth="174.0" promptText="NUMER ZAMOWIENIA" />
+      <Label layoutX="46.0" layoutY="24.0" text="WYSZUKIWANIE" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="90.0" text="TABELA" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextWyszukaj" layoutX="16.0" layoutY="51.0" prefHeight="25.0" prefWidth="174.0" promptText="Wyszukaj" />
+    </AnchorPane>
+    <TableView fx:id="Tab2" layoutX="212.0" onMouseClicked="#getSelected" prefHeight="494.0" prefWidth="652.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="212.0" AnchorPane.rightAnchor="-7.0" AnchorPane.topAnchor="0.0">
+      <columns>
+          <TableColumn fx:id="idz" prefWidth="24.0" text="ID" />
+          <TableColumn fx:id="im" prefWidth="71.0" text="IMIE" />
+          <TableColumn fx:id="na" prefWidth="76.0" text="NAZWISKO" />
+          <TableColumn fx:id="wi" prefWidth="70.0" text="NUMER TELEFONU" />
+          <TableColumn fx:id="em" prefWidth="54.0" text="EMAIL" />
+          <TableColumn fx:id="ad" prefWidth="76.0" text="ADRES" />
+          <TableColumn fx:id="ko" prefWidth="71.0" text="KOD POCZTOWY" />
+          <TableColumn fx:id="pl" prefWidth="71.0" text="PLATNOSC" />
+          <TableColumn fx:id="da" prefWidth="55.0" text="DATA" />
+         <TableColumn fx:id="nrz" prefWidth="83.0" text="NUMER ZAMOWIENIA" />
+      </columns>
+    </TableView>
+</AnchorPane>

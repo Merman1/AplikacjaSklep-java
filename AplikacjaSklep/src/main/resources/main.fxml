@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.KontrolerLogowania">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="229.0" style="-fx-background-color: #730029;" BorderPane.alignment="CENTER">
+         <Label contentDisplay="CENTER" layoutX="43.0" layoutY="98.0" text="HURTOWNIA" textAlignment="CENTER" textFill="WHITE">
+            <font>
+               <Font name="Times New Roman Bold" size="22.0" />
+            </font>
+         </Label>
+         <Label layoutX="64.0" layoutY="148.0" text="SPRZĘTU" textFill="WHITE">
+            <font>
+               <Font name="Times New Roman Bold" size="22.0" />
+            </font>
+         </Label>
+         <Label layoutX="61.0" layoutY="200.0" text="RTV i AGD" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="22.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="15.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="383.0" BorderPane.alignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <Label layoutX="112.0" layoutY="38.0" text="LOGOWANIE" textFill="#8a0e0e">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Label>
+         <Label layoutX="33.0" layoutY="145.0" text="LOGIN:">
+            <font>
+               <Font name="Times New Roman Bold" size="22.0" />
+            </font>
+         </Label>
+         <Label layoutX="33.0" layoutY="200.0" text="HASŁO:">
+            <font>
+               <Font name="Times New Roman Bold" size="22.0" />
+            </font>
+         </Label>
+         <TextField fx:id="loginTextField" layoutX="118.0" layoutY="145.0" promptText="Login" />
+         <PasswordField fx:id="hasloTextField" layoutX="118.0" layoutY="200.0" promptText="Hasło" />
+         <Button fx:id="loginButton" layoutX="92.0" layoutY="273.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="48.0" prefWidth="201.0" style="-fx-background-color: #730029;" text="LOGOWANIE" textFill="WHITE">
+            <font>
+               <Font name="Times New Roman Bold" size="22.0" />
+            </font>
+            <effect>
+               <InnerShadow />
+            </effect>
+         </Button>
+         <Button fx:id="wyjscieButton" layoutX="92.0" layoutY="338.0" mnemonicParsing="false" onAction="#wyjscieButtionOnAction" prefHeight="48.0" prefWidth="201.0" style="-fx-background-color: #730029;" text="WYJŚCIE" textFill="#fffdfd">
+            <font>
+               <Font name="Times New Roman Bold" size="22.0" />
+            </font>
+            <effect>
+               <InnerShadow />
+            </effect>
+         </Button>
+         <Label fx:id="loginMessegeLabel" alignment="CENTER" layoutX="34.0" layoutY="237.0" prefHeight="25.0" prefWidth="317.0" textFill="#f50808">
+            <font>
+               <Font name="Times New Roman" size="14.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+   </right>
+</BorderPane>

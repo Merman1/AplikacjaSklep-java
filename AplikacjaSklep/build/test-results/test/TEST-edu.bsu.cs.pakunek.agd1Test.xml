@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.bsu.cs.pakunek.agd1Test" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-06-12T19:25:16" hostname="DESKTOP-FSFI50C" time="0.03">
+  <properties/>
+  <testcase name="getId1()" classname="edu.bsu.cs.pakunek.agd1Test" time="0.014"/>
+  <testcase name="getProducent()" classname="edu.bsu.cs.pakunek.agd1Test" time="0.001"/>
+  <testcase name="getCena()" classname="edu.bsu.cs.pakunek.agd1Test" time="0.002"/>
+  <testcase name="getOpis()" classname="edu.bsu.cs.pakunek.agd1Test" time="0.001"/>
+  <testcase name="getRaty()" classname="edu.bsu.cs.pakunek.agd1Test" time="0.002"/>
+  <testcase name="getNazwa()" classname="edu.bsu.cs.pakunek.agd1Test" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

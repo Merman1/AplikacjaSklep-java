@@ -1,0 +1,218 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 134217728 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./open/src/hotspot/os/windows/os_windows.cpp:3321), pid=22252, tid=22308
+#
+# JRE version:  (15.0.2+7) (build )
+# Java VM: OpenJDK 64-Bit Server VM (15.0.2+7-27, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: --add-modules=javafx.controls,javafx.fxml --module-path=C:\Users\Jarcia\Downloads\AplikacjaSklep\build\classes\java\main;C:\Users\Jarcia\Downloads\AplikacjaSklep\build\resources\main;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\5.1.49\cf76d2e4c9c3782a85c15c87bec5772b34ffd0e5\mysql-connector-java-5.1.49.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter\5.5.1\4e3393c2238d1cf48d29b3c79f0c0928e873bc11\junit-jupiter-5.5.1.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-fxml\16\369f646fc29d2223cc98cfc3c059f2409b3e8fcb\javafx-fxml-16-win.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-controls\16\65cdeae29c67d25932dcc66ca4f7d269923631ba\javafx-controls-16-win.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-controls\16\d8334d505d5eb64400ae57f989c3db9dd47dcee3\javafx-controls-16.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-graphics\16\cd18f8477818b40cfdbcfec7e2fc15f632f0a2f\javafx-graphics-16-win.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-graphics\16\ddd09436524cfea7995db18f93b6c9a2ec54bff3\javafx-graphics-16.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-base\16\e0564fea3f27dd3a10fa62e5005612333fc244bc\javafx-base-16-win.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-base\16\56c3d09fb6cb5136ce9abc1d0d6a6914e0eed944\javafx-base-16.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.5.1\4c78cda2d8f9353290f178de6b4929cc8c14dac9\junit-jupiter-params-5.5.1.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-engine\5.5.1\5e6fdb03ccfc853aca39704c5e97850d732df204\junit-jupiter-engine-5.5.1.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.5.1\fc466b57ceda453119bd630c830ec68b93bba7f4\junit-jupiter-api-5.5.1.jar;C:\Users\Jarcia\.gradle\caches\modu--patch-module=AplikacjaSklep.main=C:\Users\Jarcia\Downloads\AplikacjaSklep\build\resources\main -Djdk.module.main=AplikacjaSklep.main AplikacjaSklep.main/edu.bsu.cs.Aplikacja -Dfile.encoding=windows-1250 -Duser.country=PL -Duser.language=pl -Duser.variant edu.bsu.cs.Aplikacja
+
+Host: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1023)
+Time: Sat Jun 12 18:03:04 2021 Œrodkowoeuropejski czas letni elapsed time: 0.031970 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001985281a6a0):  JavaThread "Unknown thread" [_thread_in_vm, id=22308, stack(0x0000005302400000,0x0000005302500000)]
+
+Stack: [0x0000005302400000,0x0000005302500000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x62ae9a]
+V  [jvm.dll+0x7817a9]
+V  [jvm.dll+0x782f03]
+V  [jvm.dll+0x783563]
+V  [jvm.dll+0x216325]
+V  [jvm.dll+0x6281d9]
+V  [jvm.dll+0x61cf55]
+V  [jvm.dll+0x2cffdd]
+V  [jvm.dll+0x2cfe42]
+V  [jvm.dll+0x2d5e1c]
+V  [jvm.dll+0x32590a]
+V  [jvm.dll+0x324fd4]
+V  [jvm.dll+0x2a6f5a]
+V  [jvm.dll+0x2a80f8]
+V  [jvm.dll+0x75e241]
+V  [jvm.dll+0x3341c4]
+V  [jvm.dll+0x73e926]
+V  [jvm.dll+0x3b7557]
+V  [jvm.dll+0x3b8fe1]
+C  [jli.dll+0x52fb]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x52651]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffc4da84ff0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000019852856f10 GCTaskThread "GC Thread#0" [stack: 0x0000005302500000,0x0000005302600000] [id=22312]
+  0x0000019852867ee0 ConcurrentGCThread "G1 Main Marker" [stack: 0x0000005302600000,0x0000005302700000] [id=22316]
+  0x0000019852869270 ConcurrentGCThread "G1 Conc#0" [stack: 0x0000005302700000,0x0000005302800000] [id=22320]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffc4d277e27]
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000019852817370] Heap_lock - owner thread: 0x000001985281a6a0
+
+Heap address: 0x0000000080c00000, size: 2036 MB, Compressed Oops mode: 32-bit
+CDS disabled.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+Heap:
+ garbage-first heap   total 131072K, used 0K [0x0000000080c00000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+ Metaspace       used 0K, capacity 0K, committed 0K, reserved 0K
+  class space    used 0K, capacity 0K, committed 0K, reserved 0K
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, OA=open archive, CA=closed archive, TAMS=top-at-mark-start (previous, next)
+
+Card table byte_map: [0x0000019869e50000,0x000001986a250000] _byte_map_base: 0x0000019869a4a000
+
+Marking Bits (Prev, Next): (CMBitMap*) 0x0000019852857700, (CMBitMap*) 0x0000019852857740
+ Prev Bits: [0x000001986a650000, 0x000001986c620000)
+ Next Bits: [0x000001986c620000, 0x000001986e5f0000)
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.007 Loaded shared library C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\java.dll
+
+
+Dynamic libraries:
+0x00007ff7a3730000 - 0x00007ff7a373d000 	C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\java.exe
+0x00007ffc89270000 - 0x00007ffc89465000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc87940000 - 0x00007ffc879fd000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc86c60000 - 0x00007ffc86f28000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc86b60000 - 0x00007ffc86c60000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffc54320000 - 0x00007ffc54338000 	C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\jli.dll
+0x00007ffc7ed50000 - 0x00007ffc7ed69000 	C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\VCRUNTIME140.dll
+0x00007ffc88fc0000 - 0x00007ffc89160000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc55150000 - 0x00007ffc553ea000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1052_none_60b8f8fd71f5e8cb\COMCTL32.dll
+0x00007ffc870b0000 - 0x00007ffc870d2000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc88850000 - 0x00007ffc8887a000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc878a0000 - 0x00007ffc8793e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc871d0000 - 0x00007ffc872db000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc87010000 - 0x00007ffc870ad000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc87670000 - 0x00007ffc876a0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffc80580000 - 0x00007ffc8058c000 	C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\vcruntime140_1.dll
+0x00007ffc52b60000 - 0x00007ffc52bf1000 	C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\msvcp140.dll
+0x00007ffc4cfc0000 - 0x00007ffc4db1e000 	C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\server\jvm.dll
+0x00007ffc87d80000 - 0x00007ffc87e2c000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc87c50000 - 0x00007ffc87ceb000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc876a0000 - 0x00007ffc877cb000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffc89160000 - 0x00007ffc89168000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffc66bf0000 - 0x00007ffc66bf9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffc80a50000 - 0x00007ffc80a5a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffc7bf50000 - 0x00007ffc7bf77000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffc87830000 - 0x00007ffc8789b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc84920000 - 0x00007ffc84932000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffc7d140000 - 0x00007ffc7d14a000 	C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\jimage.dll
+0x00007ffc80260000 - 0x00007ffc80444000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffc80140000 - 0x00007ffc8016c000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffc87140000 - 0x00007ffc871c3000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffc4cf90000 - 0x00007ffc4cfb5000 	C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1052_none_60b8f8fd71f5e8cb;C:\Users\Jarcia\.jdks\openjdk-15.0.2\bin\server
+
+VM Arguments:
+jvm_args: --add-modules=javafx.controls,javafx.fxml --module-path=C:\Users\Jarcia\Downloads\AplikacjaSklep\build\classes\java\main;C:\Users\Jarcia\Downloads\AplikacjaSklep\build\resources\main;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\5.1.49\cf76d2e4c9c3782a85c15c87bec5772b34ffd0e5\mysql-connector-java-5.1.49.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter\5.5.1\4e3393c2238d1cf48d29b3c79f0c0928e873bc11\junit-jupiter-5.5.1.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-fxml\16\369f646fc29d2223cc98cfc3c059f2409b3e8fcb\javafx-fxml-16-win.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-controls\16\65cdeae29c67d25932dcc66ca4f7d269923631ba\javafx-controls-16-win.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-controls\16\d8334d505d5eb64400ae57f989c3db9dd47dcee3\javafx-controls-16.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-graphics\16\cd18f8477818b40cfdbcfec7e2fc15f632f0a2f\javafx-graphics-16-win.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-graphics\16\ddd09436524cfea7995db18f93b6c9a2ec54bff3\javafx-graphics-16.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-base\16\e0564fea3f27dd3a10fa62e5005612333fc244bc\javafx-base-16-win.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.openjfx\javafx-base\16\56c3d09fb6cb5136ce9abc1d0d6a6914e0eed944\javafx-base-16.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-params\5.5.1\4c78cda2d8f9353290f178de6b4929cc8c14dac9\junit-jupiter-params-5.5.1.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-engine\5.5.1\5e6fdb03ccfc853aca39704c5e97850d732df204\junit-jupiter-engine-5.5.1.jar;C:\Users\Jarcia\.gradle\caches\modules-2\files-2.1\org.junit.jupiter\junit-jupiter-api\5.5.1\fc466b57ceda453119bd630c830ec68b93bba7f4\junit-jupiter-api-5.5.1.jar;C:\Users\Jarcia\.gradle\caches\modu--patch-module=AplikacjaSklep.main=C:\Users\Jarcia\Downloads\AplikacjaSklep\build\resources\main -Djdk.module.main=AplikacjaSklep.main 
+java_command: AplikacjaSklep.main/edu.bsu.cs.Aplikacja -Dfile.encoding=windows-1250 -Duser.country=PL -Duser.language=pl -Duser.variant edu.bsu.cs.Aplikacja
+java_class_path (initial): C:\Program Files\Java\jdk-15.0.2\lib\*.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 3                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 4                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 134217728                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2134900736                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5832780                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122912730                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122912730                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 2134900736                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-15.0.2
+CLASSPATH=C:\Program Files\Java\jdk-15.0.2\lib\*.jar
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;D:\WINDOWS.X64_193000_db_home\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\CodeBlocks\MinGW\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microchip\xc8\v2.31\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Jarcia\AppData\Local\Microsoft\WindowsApps;C:\Program Files\CodeBlocks\MinGW\bin;C:\Users\Jarcia\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\bin;;
+USERNAME=Jarcia
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 94 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.1023)
+OS uptime: 0 days 3:16 hours
+
+CPU: total 4 (initial active 4) (4 cores per cpu, 1 threads per core) family 6 model 94 stepping 3 microcode 0xcc, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, vzeroupper, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, tsc, tscinvbit, bmi1, bmi2, adx, fma, clflush, clflushopt
+
+Memory: 4k page, system-wide physical 8138M (273M free)
+TotalPageFile size 32714M (AvailPageFile size 52M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 52M, peak: 179M
+
+vm_info: OpenJDK 64-Bit Server VM (15.0.2+7-27) for windows-amd64 JRE (15.0.2+7-27), built on Dec  7 2020 20:02:38 by "mach5one" with unknown MS VC++:1925
+
+END.

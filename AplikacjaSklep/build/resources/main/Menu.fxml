@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane cache="true" cacheHint="SPEED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="807.0" style="-fx-background-color: #e8e8e8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.KontrolerMenu">
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <AnchorPane prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #841839;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <Label layoutX="39.0" layoutY="100.0" text="MENU:" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button fx:id="ButtonAGDD" layoutX="22.0" layoutY="147.0" mnemonicParsing="false" onAction="#AgdDButtonOnAction" prefHeight="25.0" prefWidth="155.0" text="AGD DUŻE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="ButtonAGDM" layoutX="22.0" layoutY="187.0" mnemonicParsing="false" onAction="#AgdMButtonOnAction" prefHeight="25.0" prefWidth="155.0" text="AGD MAŁE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="ButtonKomputery" layoutX="22.0" layoutY="227.0" mnemonicParsing="false" onAction="#KomputeryButtonOnAction" prefHeight="25.0" prefWidth="155.0" text="KOMPUTERY">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="ButtonKonsoleGry" layoutX="23.0" layoutY="267.0" mnemonicParsing="false" onAction="#KonsoleGryButtonOnAction" prefHeight="25.0" prefWidth="155.0" text="KONSOLE/GRY">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="ButtonSmartfony" layoutX="23.0" layoutY="307.0" mnemonicParsing="false" onAction="#SmartfonyButtonOnAction" prefHeight="25.0" prefWidth="155.0" text="SMARTFONY">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="ButtonTvAudio" layoutX="22.0" layoutY="347.0" mnemonicParsing="false" onAction="#TvAudioButtonOnAction" prefHeight="25.0" prefWidth="155.0" text="TV/AUDIO">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="12.0" layoutY="400.0" text="ZAMÓWIENIA:" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button fx:id="zamowieniaButton" layoutX="22.0" layoutY="450.0" mnemonicParsing="false" onAction="#zamowieniaButtionOnAction" prefHeight="24.0" prefWidth="155.0" text="ZAMÓWIENIA">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="zamknijButton" layoutX="14.0" layoutY="542.0" minWidth="83.0" mnemonicParsing="false" onAction="#zamknijButtonOnAction" text="WYJŚCIE">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="wylogujButton" layoutX="101.0" layoutY="542.0" mnemonicParsing="false" onAction="#wylogujButtonOnAction" prefHeight="22.0" prefWidth="83.0" text="WYLOGUJ">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="55.0" layoutY="496.0" text="OPCJE:" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+   </AnchorPane>
+   <AnchorPane layoutX="-9.0" layoutY="-2.0" prefHeight="87.0" prefWidth="815.0" style="-fx-background-color: #730029;" AnchorPane.leftAnchor="-9.0" AnchorPane.rightAnchor="0.7999999999999545">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <Label layoutX="104.0" layoutY="24.0" text="HURTOWNIA SPRZĘTU RTV I AGD" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+         <effect>
+            <Glow level="0.56" />
+         </effect>
+      </Label>
+   </AnchorPane>
+   <ImageView fitHeight="445.0" fitWidth="599.0" layoutX="200.0" layoutY="85.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="85.0">
+      <Image url="@logo.jpg" />
+   </ImageView>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.KontrolerKonsoleGry">
+    <AnchorPane prefHeight="470.0" prefWidth="226.0" style="-fx-background-color: #730029;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <TextField fx:id="TextG1" layoutX="17.0" layoutY="125.0" prefHeight="26.0" prefWidth="203.0" promptText="ID" />
+        <TextField fx:id="TextG2" layoutX="17.0" layoutY="160.0" prefHeight="26.0" prefWidth="203.0" promptText="NAZWA" />
+        <TextField fx:id="TextG3" layoutX="17.0" layoutY="195.0" prefHeight="26.0" prefWidth="203.0" promptText="PRODUCENT" />
+        <TextField fx:id="TextG4" layoutX="17.0" layoutY="232.0" prefHeight="26.0" prefWidth="203.0" promptText="CENA" />
+        <TextField fx:id="TextG5" layoutX="17.0" layoutY="266.0" prefHeight="26.0" prefWidth="203.0" promptText="RATY" />
+        <TextArea fx:id="TextG6" layoutX="17.0" layoutY="301.0" prefHeight="66.0" prefWidth="203.0" promptText="OPIS" />
+        <Button fx:id="DodajButton" layoutX="41.0" layoutY="386.0" mnemonicParsing="false" onAction="#DodajButtonOnActionEvent" prefHeight="25.0" prefWidth="155.0" text="DODAJ">
+            <font>
+                <Font name="Times New Roman Bold" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <Button fx:id="UsunButton" layoutX="41.0" layoutY="424.0" mnemonicParsing="false" onAction="#UsunButtonOnActionEvent" prefHeight="25.0" prefWidth="155.0" text="USUŃ">
+            <font>
+                <Font name="Times New Roman Bold" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <Button fx:id="EdytujButton" layoutX="41.0" layoutY="461.0" mnemonicParsing="false" onAction="#EdytujButtonOnActionEvent" prefHeight="25.0" prefWidth="155.0" text="AKTUALIZUJ">
+            <font>
+                <Font name="Times New Roman Bold" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+        <Button fx:id="ZamknijButton" layoutX="41.0" layoutY="495.0" mnemonicParsing="false" onAction="#zamknijButtonOnAction" prefHeight="25.0" prefWidth="155.0" text="ZAMKNIJ">
+            <font>
+                <Font name="Times New Roman Bold" size="12.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </Button>
+      <Label layoutX="60.0" layoutY="14.0" text="WYSZUKIWANIE" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="102.0" text="TABELA" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextWyszukaj" layoutX="16.0" layoutY="41.0" prefHeight="25.0" prefWidth="203.0" promptText="Wyszukaj..." />
+    </AnchorPane>
+    <TableView fx:id="Tab1" layoutX="226.0" onMouseClicked="#getSelected" prefHeight="470.0" prefWidth="613.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="226.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <columns>
+          <TableColumn fx:id="idp" prefWidth="30.0" text="ID" />
+          <TableColumn fx:id="naz" prefWidth="138.0" text="NAZWA" />
+          <TableColumn fx:id="proc" prefWidth="97.0" text="PRODUCENT" />
+          <TableColumn fx:id="cen" prefWidth="70.0" text="CENA" />
+          <TableColumn fx:id="rat" prefWidth="51.0" text="RATY" />
+          <TableColumn fx:id="op" text="OPIS" />
+      </columns>
+    </TableView>
+</AnchorPane>

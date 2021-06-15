@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/java/projekt/KontrolerAgdD.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/projekt/KontrolerAgdM.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/projekt/KontrolerKomputery.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/projekt/KontrolerKonsoleGry.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/projekt/KontrolerLogowania.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/projekt/KontrolerSmartfony.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/projekt/KontrolerTvAudio.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/projekt/KontrolerZamowienia.java" dialect="GenericSQL" />
+  </component>
+</project>
